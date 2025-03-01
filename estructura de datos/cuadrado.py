@@ -4,19 +4,19 @@ class Cuadrado:
     def __init__(self, lado=0):
         self.__lado = lado
     
-    def get_lado(self):
+    def get_lado(self)->float:
         return self.__lado
     
-    def set_lado(self, lado):
+    def set_lado(self, lado:float)->None:
         self.__lado = lado
 
-    def esCuadrado(self):
+    def esCuadrado(self)-> bool:
         return self.__lado>0
     
-    def area(self):
+    def area(self)-> float:
         return self.__lado ** 2
     
-    def perimetro(self):
+    def perimetro(self)-> float:
         return 4 * self.__lado
 
 def main():
