@@ -21,8 +21,8 @@ class Circulo:
 
 def main():
     try:
+        c = Circulo()
         c.set__radio(float(input("Ingrese el radio del círculo: ")))
-        c = Circulo(radio)
     
         if c.es_un_circulo():
             print(f"El área del círculo es: {c.area():.2f}")
