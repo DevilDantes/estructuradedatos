@@ -14,13 +14,13 @@ class Triangulo:
     def get_l3(self)-> float:
                 return self.__l3
             
-    def set_l1(self, l1)->None:
+    def set_l1(self, l1:float)->None:
                 self.__l1 = l1
             
-    def set_l2(self, l2)-> None:
+    def set_l2(self, l2:float)-> None:
                 self.__l2 = l2
             
-    def set_l3(self, l3)-> None:
+    def set_l3(self, l3:float)-> None:
                 self.__l3 = l3
 
     def es_triangulo(self)-> bool:
