@@ -5,8 +5,25 @@ class Triangulo:
         self.__l1 = l1
         self.__l2 = l2
         self.__l3 = l3
+    def get_l1(self)-> float:
+                return self.__l1
+            
+    def get_l2(self)-> float:
+                return self.__l2
+            
+    def get_l3(self)-> float:
+                return self.__l3
+            
+    def set_l1(self, l1)->None:
+                self.__l1 = l1
+            
+    def set_l2(self, l2)-> None:
+                self.__l2 = l2
+            
+    def set_l3(self, l3)-> None:
+                self.__l3 = l3
 
-    def es_triangulo(self):
+    def es_triangulo(self)-> bool:
         return self.__l1 + self.__l2 > self.__l3 and self.__l1 + self.__l3 > self.__l2 and self.__l2 + self.__l3 > self.__l1
     
     def area(self):
@@ -24,15 +41,7 @@ class Triangulo:
         else:
             return "Isósceles"
     
-    def get_l1(self):
-        return self.__l1
     
-    def get_l2(self):
-        return self.__l2
-    
-    def get_l3(self):
-        return self.__l3
-
 
 def main():
     l1 = float(input("Digite el lado uno del Triángulo: "))
