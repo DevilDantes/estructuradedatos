@@ -21,7 +21,7 @@ class Circulo:
 
 def main():
     try:
-        radio = float(input("Ingrese el radio del círculo: "))
+        c.set__radio(float(input("Ingrese el radio del círculo: ")))
         c = Circulo(radio)
     
         if c.es_un_circulo():
