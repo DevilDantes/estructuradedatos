@@ -5,11 +5,17 @@ class Rectangulo:
         self.__largo = largo
         self.__ancho = ancho
     
-    def get__largo(self):
+    def get__largo(self)->float:
         return self.__largo
     
-    def get__ancho(self):
+    def get__ancho(self)->float:
         return self.__ancho
+    
+    def set_largo(self, largo:float)->None:
+        self.__largo = largo
+    
+    def set_ancho(self, ancho:float)->None:
+        self.__ancho = ancho
     
     def esRectangulo(self):
         return self.__largo>0 and self.__ancho>0
