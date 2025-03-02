@@ -44,12 +44,10 @@ class Triangulo:
     
 
 def main():
-    l1 = float(input("Digite el lado uno del Triángulo: "))
+    t = Triangulo(l1, l2, l3)
+    t.set__l1(float(input("Digite el lado uno del Triángulo: ")))
     l2 = float(input("Digite el lado dos del Triángulo: "))
     l3 = float(input("Digite el lado tres del Triángulo: "))
-    
-    t = Triangulo(l1, l2, l3)
-    
     if t.es_triangulo():
         print(f"El área del triángulo es: {t.area():.2f}")
         print(f"El perímetro del triángulo es: {t.perimetro():.2f}")
