@@ -44,7 +44,7 @@ class Triangulo:
     
 
 def main():
-    t = Triangulo(l1, l2, l3)
+    t = Triangulo()
     t.set_l1(float(input("Digite el lado uno del Triángulo: ")))
     t.set_l2(float(input("Digite el lado dos del Triángulo: ")))
     t.set_l3(float(input("Digite el lado tres del Triángulo: ")))
