@@ -63,7 +63,7 @@ class Circulo:
     def perimetro(self) -> float:
         return round(2 * math.pi * self.radio(), 2)
 
-# Clase Cilindro (Hereda de Círculo)
+# Clase Cilindro 
 class Cilindro(Circulo):
     def __init__(self):
         super().__init__()
@@ -101,7 +101,7 @@ class Cuadrado:
     def perimetro(self) -> float:
         return round(4 * self.__lado, 2)
 
-# Clase Cubo (Hereda de Cuadrado)
+# Clase Cubo 
 class Cubo(Cuadrado):
     def volumen(self) -> float:
         return round(self.get_lado() ** 3, 2)
@@ -115,6 +115,15 @@ class Rombo:
         self.__diagonal_mayor = 0.0
         self.__diagonal_menor = 0.0
         self.__lado = 0.0
+    
+    def get__diagonal_mayor(self)->float:
+        return self.__diagonal_mayor
+    
+    def get__diagonal_menor(self)->float:
+        return self.__diagonal_menor    
+    
+    def get__lado(self)->float:
+        return self.__lado 
 
     def set_diagonal_mayor(self, d: float) -> None:
         self.__diagonal_mayor = d
