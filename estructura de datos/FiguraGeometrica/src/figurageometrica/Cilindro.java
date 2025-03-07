@@ -4,13 +4,11 @@ public class Cilindro {
     private double radio;
     private double altura;
 
-    // Constructor por defecto
     public Cilindro() {
         this.radio = 0;
         this.altura = 0;
     }
 
-    // Constructor con parámetros
     public Cilindro(double radio, double altura) {
         setRadio(radio);
         setAltura(altura);
@@ -40,22 +38,18 @@ public class Cilindro {
         }
     }
 
-    // Calcula el area de la base usando el area del circulo
     public double areaBase() {
         return Math.PI * Math.pow(radio, 2);
     }
 
-    // Calcula el area lateral
     public double areaLateral() {
         return 2 * Math.PI * radio * altura;
     }
 
-    // Calcula el area total
     public double areaTotal() {
         return 2 * areaBase() + areaLateral();
     }
 
-    // Calcula el volumen
     public double volumen() {
         return areaBase() * altura;
     }
